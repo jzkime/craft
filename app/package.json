@@ -1,0 +1,13 @@
+{
+  "name": "ts-mono-craft",
+  "version": "1.0.0",
+  "description": "ts mono repo with storage of craft projects",
+  "main": "index.js",
+  "scripts": {
+    "start-client-dev": "npm run dev --prefix packages/client",
+    "start-server-dev": "npm run server-dev --prefix packages/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jazmine Kime",
+  "license": "UNLICENSED"
+}

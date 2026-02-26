@@ -1,0 +1,44 @@
+#Intellij/Pycharm
+*.iml
+/.idea/
+
+# macOS settings file
+.DS_Store
+*.pem
+
+# Windows executables
+*.exe
+
+# dotenv environment variable files
+.env
+.env.*
+
+node_modules
+/dist
+/build
+/tmp
+/out/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# temp directory
+.temp
+.tmp
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# Built Visual Studio Code Extensions
+*.vsix
