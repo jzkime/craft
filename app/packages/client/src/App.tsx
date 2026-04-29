@@ -1,8 +1,13 @@
-import './App.css'
+import { WYSIWYG } from "./wysiwyg/WYSIWYG"
 
 function App() {
   return (
-    <>App</>
+    <div>
+      <div style={{paddingBottom: 16}}>
+        App
+      </div>
+      <WYSIWYG />  
+    </div>
   )
 }
 
