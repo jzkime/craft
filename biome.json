@@ -7,8 +7,8 @@
 	},
 	"files": {
 		"includes": [
-			"packages/**/*.ts",
-			"packages/**/*.tsx",
+			"app/packages/**/*.ts",
+			"app/packages/**/*.tsx",
 			"!!/node_modules",
 			"!!/dist"
 		]
