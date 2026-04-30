@@ -17,5 +17,5 @@ jobs:
         with:
           version: latest
       - name: Run Biome
-        working-directory: ./app/packages
+        working-directory: ./app
         run: biome ci .
