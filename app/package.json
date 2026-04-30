@@ -6,7 +6,8 @@
   "scripts": {
     "start-client-dev": "npm run dev --prefix packages/client",
     "start-server-dev": "npm run server-dev --prefix packages/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-fix-unsafe": "npx @biomejs/biome check --write --unsafe ./"
   },
   "author": "Jazmine Kime",
   "license": "UNLICENSED"

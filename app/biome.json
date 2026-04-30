@@ -6,34 +6,42 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"includes": ["packages/**/*.ts", "packages/**/*.tsx", "!!/node_modules", "!!/dist"]
-	},
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab",
-		"bracketSpacing": true
+		"includes": [
+			"packages/**/*.ts",
+			"packages/**/*.tsx",
+			"!!/node_modules",
+			"!!/dist"
+		]
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"complexity": { "noStaticOnlyClass": "off" },
+			"complexity": { "noStaticOnlyClass": "off", "noUselessFragments": "off" },
 			"recommended": true,
 			"correctness": {
 				"useExhaustiveDependencies": "off",
-				"noUnusedImports": "error"
+				"noUnusedImports": "error",
+				"noUnusedVariables": { "level": "warn", "fix": "none" }
 			},
 			"suspicious": {
 				"noConsole": "error"
+			},
+			"style": {
+				"useBlockStatements": "error"
 			}
 		}
 	},
 	"javascript": {
 		"formatter": {
+			"bracketSameLine": false,
 			"quoteStyle": "double",
+			"indentStyle": "space",
 			"indentWidth": 4,
-			"lineWidth": 4
-		}
+			"lineWidth": 120,
+			"lineEnding": "lf",
+			"trailingCommas": "all"
+		},
+		"parser": { "unsafeParameterDecoratorsEnabled": true }
 	},
 	"assist": {
 		"enabled": true,

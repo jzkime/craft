@@ -1,0 +1,16 @@
+# macOS settings file
+.DS_Store
+*.pem
+
+# Windows executables
+*.exe
+
+# dotenv environment variable files
+.env
+.env.*
+
+node_modules
+/dist
+/build
+/tmp
+/out/
